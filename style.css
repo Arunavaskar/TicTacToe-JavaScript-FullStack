@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+
+.wrapper div{
+    border: 2px black solid;
+}
+
+.wrapper{
+    width: 600px;
+    height: 700px;
+    margin: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(50px, auto);
+}
+.header{
+    grid-column: 1/-1;
+    grid-row: 1;
+    padding-top: 70px;
+    padding-left: 9.2em;
+
+    font-family: 'Finger Paint', cursive;
+    font-size: 25px;
+}
+
