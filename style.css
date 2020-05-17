@@ -18,9 +18,10 @@
 .header{
     grid-column: 1/-1;
     grid-row: 1;
-    padding-top: 70px;
-    padding-left: 9.2em;
 
+    padding-left: 225px;
+    padding-top: 60px;
+    /* border: 1px solid black; */
     font-family: 'Finger Paint', cursive;
     font-size: 25px;
 }
