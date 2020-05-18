@@ -2,31 +2,38 @@
 $(document).ready(()=>{
 
     $(".one").click(() => {
-        $(".one").text("X");
+        $(".one").html("<img id='one-img' src='my.jpg' height = '100' width = '100'>");
+        $("#one-img").css({"border":"2px red dotted"})
     });
     $(".two").click(() => {
-        alert("two clicked!");
+        $(".two").html("<img id='two-img' src='my.jpg' height = '100' width = '100'>");
+        $("#two-img").css({"border": "2px blue dotted" })
     });
     $(".three").click(() => {
-        alert("three clicked!");
+        $(".three").html("<img id='three-img' src='my.jpg' height = '100' width = '100'>");
+        $("#three-img").css({"border": "2px blueviolet dotted"})
     });
     $(".four").click(() => {
-        alert("four clicked!");
+                $(".three").html("<img id='three-img' src='my.jpg' height = '100' width = '100'>");
+        $("#three-img").css({"border": "2px blueviolet dotted"})
     });
     $(".five").click(() => {
-        alert("five clicked!");
+                $(".three").html("<img id='three-img' src='my.jpg' height = '100' width = '100'>");
+        $("#three-img").css({"border": "2px blueviolet dotted"})
     });
     $(".six").click(() => {
-        alert("six clicked!");
+                $(".three").html("<img id='three-img' src='my.jpg' height = '100' width = '100'>");
+        $("#three-img").css({"border": "2px blueviolet dotted"})
     });
     $(".seven").click(() => {
-        alert("seven clicked!");
+                $(".three").html("<img id='three-img' src='my.jpg' height = '100' width = '100'>");
     });
     $(".eight").click(() => {
-        alert("eight clicked!");
+        $(".three").html("<img id='three-img' src='my.jpg' height = '100' width = '100'>");
+        $("#three-img").css({ "border": "2px blueviolet dotted" })
     });
     $(".nine").click(() => {
-        alert("nine clicked!");
+                $("#three-img").css({"border": "2px blueviolet dotted"})
     });
 
 });
