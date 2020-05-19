@@ -7,22 +7,22 @@
 
 .wrapper{
     width: 600px;
-    height: 700px;
+    height: 600px;
     margin: auto;
     
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
     grid-auto-rows: minmax(50px, auto);
+    border: 2px black solid;
 }
-.header{
-    grid-column: 1/-1;
-    grid-row: 1;
+.wrapper-second{
+    display: grid;
+    justify-items: center;
 
-    padding-left: 225px;
-    padding-top: 60px;
-    /* border: 1px solid black; */
     font-family: 'Finger Paint', cursive;
     font-size: 25px;
 }
+
+
 

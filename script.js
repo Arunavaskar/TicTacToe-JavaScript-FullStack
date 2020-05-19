@@ -3,83 +3,74 @@ $(document).ready(()=>{
 
     // one
     $(".one").click(() => {
-        $(".one").html("<img id='one-img' src='my.jpg' height = '100' width = '100'>");
-        $("#one-img").css({"border":"2px red dotted"})
+        $(".one").css({"background-image":"url('my.jpg')", "background-size":"192px 192px"});
     });
     $(".one").dblclick(function () {
-        $(".one").text("double clicked one!");
+        $(".one").css({"background-image":""});
     });
 
     // two
     $(".two").click(() => {
-        $(".two").html("<img id='two-img' src='my.jpg' height = '100' width = '100'>");
-        $("#two-img").css({"border": "2px blue dotted"})
+        $(".two").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".two").dblclick(function () {
-        $(".two").text("double clicked two!");
+        $(".two").css({ "background-image": "" });
     });
 
     // three
     $(".three").click(() => {
-        $(".three").html("<img id='three-img' src='my.jpg' height = '100' width = '100'>");
-        $("#three-img").css({"border": "2px blueviolet dotted"})
+        $(".three").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".three").dblclick(function () {
-        $(".three").text("double clicked three!");
+        $(".three").css({ "background-image": "" });
     });
 
     // four
     $(".four").click(() => {
-        $(".four").html("<img id='four-img' src='my.jpg' height = '100' width = '100'>");
-        $("#four-img").css({"border": "2px blueviolet dotted"})
+        $(".four").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".four").dblclick(function () {
-        $(".four").text("double clicked four!");
+        $(".four").css({ "background-image": "" });
     });
 
     // five
     $(".five").click(() => {
-        $(".five").html("<img id='five-img' src='my.jpg' height = '100' width = '100'>");
-        $("#five-img").css({"border": "2px blueviolet dotted"})
+        $(".five").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".five").dblclick(function () {
-        $(".five").text("double clicked five!");
+        $(".five").css({ "background-image": "" });
     });
 
     // six
     $(".six").click(() => {
-        $(".six").html("<img id='six-img' src='my.jpg' height = '100' width = '100'>");
-        $("#six-img").css({"border": "2px blueviolet dotted"})
+        $(".six").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".six").dblclick(function () {
-        $(".six").text("double clicked six!");
+        $(".six").css({ "background-image": "" });
     });
 
     // seven
     $(".seven").click(() => {
-        $(".seven").html("<img id='seven-img' src='my.jpg' height = '100' width = '100'>");
-        $("#seven-img").css({ "border": "2px blueviolet dotted" })
+        $(".seven").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".seven").dblclick(function () {
-        $(".seven").text("double clicked seven!");
+        $(".seven").css({ "background-image": "" });
     });
 
     // eight
     $(".eight").click(() => {
-        $(".eight").html("<img id='eight-img' src='my.jpg' height = '100' width = '100'>");
-        $("#eight-img").css({ "border": "2px blueviolet dotted" })
+        $(".eight").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".eight").dblclick(function () {
-        $(".eight").text("double clicked eight!");
+        $(".eight").css({ "background-image": "" });
     });
 
     // nine
     $(".nine").click(() => {
-        $(".nine").html("<img id='nine-img' src='my.jpg' height = '100' width = '100'>");
-        $("#nine-img").css({"border": "2px blueviolet dotted"})
+        $(".nine").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".nine").dblclick(function () {
-        $(".nine").text("double clicked nine!");
+        $(".nine").css({ "background-image": "" });
     });
 
 });
