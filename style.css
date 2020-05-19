@@ -3,22 +3,26 @@
 
 .wrapper div{
     border: 2px black solid;
+    border-radius: 20px;
 }
 
 .wrapper{
     width: 600px;
     height: 600px;
     margin: auto;
+    margin-top: 50px;
     
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
     grid-auto-rows: minmax(50px, auto);
-    border: 2px black solid;
+    /* border: 2px black solid;
+    border-radius: 20px */
 }
 .wrapper-second{
     display: grid;
     justify-items: center;
+    margin-top: 20px;
 
     font-family: 'Finger Paint', cursive;
     font-size: 25px;
