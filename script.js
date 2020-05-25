@@ -6,7 +6,7 @@ $(document).ready(()=>{
         $(".one").css({"background-image":"url('my.jpg')", "background-size":"192px 192px"});
     });
     $(".one").dblclick(function () {
-        $(".one").css({"background-image":""});
+        $(".one").css({"background-image": "url('port.jpg')", "background-size": "192px 192px"});
     });
 
     // two
@@ -14,7 +14,7 @@ $(document).ready(()=>{
         $(".two").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".two").dblclick(function () {
-        $(".two").css({ "background-image": "" });
+        $(".two").css({ "background-image": "url('port.jpg')", "background-size": "192px 192px"});
     });
 
     // three
@@ -22,7 +22,7 @@ $(document).ready(()=>{
         $(".three").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".three").dblclick(function () {
-        $(".three").css({ "background-image": "" });
+        $(".three").css({ "background-image": "url('port.jpg')", "background-size": "192px 192px"});
     });
 
     // four
@@ -30,7 +30,7 @@ $(document).ready(()=>{
         $(".four").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".four").dblclick(function () {
-        $(".four").css({ "background-image": "" });
+        $(".four").css({ "background-image": "url('port.jpg')", "background-size": "192px 192px"});
     });
 
     // five
@@ -38,7 +38,7 @@ $(document).ready(()=>{
         $(".five").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".five").dblclick(function () {
-        $(".five").css({ "background-image": "" });
+        $(".five").css({ "background-image": "url('port.jpg')", "background-size": "192px 192px"});
     });
 
     // six
@@ -46,7 +46,7 @@ $(document).ready(()=>{
         $(".six").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".six").dblclick(function () {
-        $(".six").css({ "background-image": "" });
+        $(".six").css({ "background-image": "url('port.jpg')", "background-size": "192px 192px"});
     });
 
     // seven
@@ -54,7 +54,7 @@ $(document).ready(()=>{
         $(".seven").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".seven").dblclick(function () {
-        $(".seven").css({ "background-image": "" });
+        $(".seven").css({ "background-image": "url('port.jpg')", "background-size": "192px 192px"});
     });
 
     // eight
@@ -62,7 +62,7 @@ $(document).ready(()=>{
         $(".eight").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".eight").dblclick(function () {
-        $(".eight").css({ "background-image": "" });
+        $(".eight").css({ "background-image": "url('port.jpg')", "background-size": "192px 192px"});
     });
 
     // nine
@@ -70,7 +70,7 @@ $(document).ready(()=>{
         $(".nine").css({ "background-image": "url('my.jpg')", "background-size": "192px 192px" });
     });
     $(".nine").dblclick(function () {
-        $(".nine").css({ "background-image": "" });
+        $(".nine").css({ "background-image": "url('port.jpg')", "background-size": "192px 192px"});
     });
-
+    
 });
