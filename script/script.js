@@ -3,11 +3,11 @@ $(document).ready(()=>{
 
     // function to add the CROSS image while clicked once
     function cssCross(clss) {
-        $(clss).css({ "background-image": "url('cross.png')", "background-size": "196px 194px" });
+        $(clss).css({ "background-image": "url('media/cross.png')", "background-size": "196px 194px" });
     }
     // function to add the round image while clicked once
     function cssRound(clss) {
-        $(clss).css({ "background-image": "url('round.png')", "background-size": "196px 197px" });
+        $(clss).css({ "background-image": "url('media/round.png')", "background-size": "196px 197px" });
     }
 
 
