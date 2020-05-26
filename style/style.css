@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 
+.game{
+    display: none;
+}
 
 .wrapper div{
     border: 2px black solid;
@@ -11,6 +14,7 @@
     height: 600px;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
@@ -21,13 +25,35 @@
     background-size: 600px 600px; */
 
 }
-.wrapper-second{
+.header{
     display: grid;
     justify-items: center;
     margin-top: 20px;
 
     font-family: 'Finger Paint', cursive;
     font-size: 25px;
+}
+
+.button{
+    display: grid;
+
+    justify-items: center;
+    font-family: 'Finger Paint', cursive;
+    font-size: 15px;
+
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.button2{
+    display: grid;
+
+    justify-items: center;
+    font-family: 'Finger Paint', cursive;
+    font-size: 15px;
+
+    border: 2px solid black;
+    border-radius: 20px;
 }
 
 .wrapper-third{
@@ -58,5 +84,4 @@
 
     padding: 2%;
 }
-
 

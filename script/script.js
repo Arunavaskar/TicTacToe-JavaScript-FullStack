@@ -1,6 +1,21 @@
 // here we have to know when the grid/ boxes are being clicked.
 $(document).ready(()=>{
 
+    // button to start the game/unhide the game
+    $(".button").click(()=>{
+        $(".game").css({"display":"block"});
+        $(".button").css({ "display": "none" });
+    })
+
+    // button to reset the game/
+    $(".button2").click(() => {
+        $(".wrapper div").val("");
+        $(".wrapper div").css({ "background-image": "", "background-size": "196px 194px" });
+        $(".turn-x").css({ "background-color": "#C1C1C1" });
+        $(".turn-o").css({ "background-color": "white" });
+
+    })
+
     // function to add the CROSS image while clicked once
     function cssCross(clss) {
         $(clss).css({ "background-image": "url('media/cross.png')", "background-size": "196px 194px" });
