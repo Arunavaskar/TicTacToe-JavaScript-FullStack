@@ -15,8 +15,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
     grid-auto-rows: minmax(50px, auto);
-    border: 2px black solid;
-    border-radius: 20px
+    /* border: 2px black solid;
+    border-radius: 20px; */
+    /* background-image: url(board.png);
+    background-size: 600px 600px; */
+
 }
 .wrapper-second{
     display: grid;
@@ -27,5 +30,33 @@
     font-size: 25px;
 }
 
+.wrapper-third{
+    display: grid;
+    justify-items: center;
+}
+
+.turn-x{
+    grid-column: 1/2;
+    grid-row: 1/1;
+
+    border: 2px solid black;
+    border-radius: 20px;
+
+    padding: 2%;
+
+    /* because xis always the first turn
+    and this is the idication of the turn by default */
+    background-color: #C1C1C1;
+}
+
+.turn-o{
+    grid-column: 2/2;
+    grid-row: 1/1;
+
+    border: 2px solid black;
+    border-radius: 20px;
+
+    padding: 2%;
+}
 
 
