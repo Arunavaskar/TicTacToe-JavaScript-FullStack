@@ -47,8 +47,6 @@ $(document).ready(() => {
 
     var winModel_val = Object.values(winModel_obj);
     function WhoWon(player, playerName, winModel_val) {
-        // let included = winModel_val[0][0].filter((value) => playerX.includes(value));
-        // console.log(included);
         for (let index = 0; index < winModel_val.length; index++) {
             let element = winModel_val[index];
             for (let index2 = 0; index2 < element.length; index2++) {
