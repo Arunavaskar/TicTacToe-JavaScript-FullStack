@@ -9,12 +9,14 @@ $(document).ready(() => {
     })
     // button to reset the game/
     $(".button2").click(() => {
-        $(".wrapper div").val("");
-        $(".wrapper div").css({ "background-image": "", "background-size": "196px 194px" });
-        $(".turn-x").css({ "background-color": "#C1C1C1" });
-        $(".turn-o").css({ "background-color": "white" });
-        $(".winingText").css({ display: "none" });
-        $(".winingText").html();
+        // $(".wrapper div").val("");
+        // $(".wrapper div").css({ "background-image": "", "background-size": "196px 194px" });
+        // $(".turn-x").css({ "background-color": "#C1C1C1" });
+        // $(".turn-o").css({ "background-color": "white" });
+        // $(".winingText").css({ display: "none" });
+        // $(".winingText").html();
+         location.reload();
+        // $.getScript('js/script.js')
     })
         var playerXX = "player X";
         var playerOO = "player O";
@@ -56,13 +58,13 @@ $(document).ready(() => {
                     var write = playerName + " won";
                     console.log(write + JSON.stringify(included));
                     $(".winingText").css({"display":"block"});
-                    $(".winingText").html(playerName + " won! tap or click on the screen to continue!");
+                    $(".winingText").html(playerName + " won! click on the restart button below to restart the game.");
                     // $(".wrapper div").val("");
                     // $(".wrapper div").css({ "background-image": "", "background-size": "196px 194px" });
                     // $(".turn-x").css({ "background-color": "#C1C1C1" });
                     // $(".turn-o").css({ "background-color": "white" });
                     // $(".game").css({ display: "none" });
-                    // $(".box").off("click");
+                     $(".box").off("click");
                     
                 }
             }

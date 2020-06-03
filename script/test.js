@@ -28,17 +28,4 @@ boxes.forEach(element => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
