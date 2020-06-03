@@ -5,6 +5,7 @@ $(document).ready(() => {
     $(".button").click(() => {
         $(".game").css({ "display": "block" });
         $(".button").css({ "display": "none" });
+        $(".winingText").css({ display: "block" });
     })
     // button to reset the game/
     $(".button2").click(() => {
@@ -12,13 +13,12 @@ $(document).ready(() => {
         $(".wrapper div").css({ "background-image": "", "background-size": "196px 194px" });
         $(".turn-x").css({ "background-color": "#C1C1C1" });
         $(".turn-o").css({ "background-color": "white" });
-
-        var playerXX = "player x";
-        var playerOO = "player o";
-        WhoWon(playerX, playerXX, winModel_val);
-        WhoWon(playerO, playerOO, winModel_val);
-
+        $(".winingText").css({ display: "none" });
+        $(".winingText").html();
     })
+        var playerXX = "player X";
+        var playerOO = "player O";
+
 
     // function to add the CROSS image while clicked once
     function cssCross(clss) {
@@ -30,12 +30,12 @@ $(document).ready(() => {
     }
 
     // player data
-    let player_Marks_obj = {"playerX_Marks": [], "playerY_Marks": []};
+    var player_Marks_obj = {"playerX_Marks": [], "playerY_Marks": []};
     var player_Marks_val = Object.values(player_Marks_obj);
-    let playerX = player_Marks_val[0];
-    let playerO = player_Marks_val[1];
+    var playerX = player_Marks_val[0];
+    var playerO = player_Marks_val[1];
 
-
+    // wining model
     var winModel_obj =
     {
         "LeftToSide":[[1,2,3],[4,5,6],[7,8,9]]
@@ -55,6 +55,15 @@ $(document).ready(() => {
                 if (JSON.stringify(included) == JSON.stringify(element2)){
                     var write = playerName + " won";
                     console.log(write + JSON.stringify(included));
+                    $(".winingText").css({"display":"block"});
+                    $(".winingText").html(playerName + " won! tap or click on the screen to continue!");
+                    // $(".wrapper div").val("");
+                    // $(".wrapper div").css({ "background-image": "", "background-size": "196px 194px" });
+                    // $(".turn-x").css({ "background-color": "#C1C1C1" });
+                    // $(".turn-o").css({ "background-color": "white" });
+                    // $(".game").css({ display: "none" });
+                    // $(".box").off("click");
+                    
                 }
             }
         }
@@ -73,6 +82,13 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "white" });
             $(".turn-o").css({ "background-color": "#C1C1C1" });
             player_Marks_obj["playerX_Marks"].push(1);
+
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
         else if (turn == 'o') {
             cssRound(one);
@@ -80,6 +96,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "#C1C1C1" });
             $(".turn-o").css({ "background-color": "white" });
             player_Marks_obj["playerY_Marks"].push(1);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
         // MarkerChanger_TurnIndicator(turn);
     });
@@ -93,6 +115,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "white" });
             $(".turn-o").css({ "background-color": "#C1C1C1" });
             player_Marks_obj["playerX_Marks"].push(2);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
         else if (turn == 'o') {
             cssRound(two);
@@ -100,6 +128,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "#C1C1C1" });
             $(".turn-o").css({ "background-color": "white" });
             player_Marks_obj["playerY_Marks"].push(2);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
     });
 
@@ -112,6 +146,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "white" });
             $(".turn-o").css({ "background-color": "#C1C1C1" });
             player_Marks_obj["playerX_Marks"].push(3);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
         else if (turn == 'o') {
             cssRound(three);
@@ -119,6 +159,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "#C1C1C1" });
             $(".turn-o").css({ "background-color": "white" });
             player_Marks_obj["playerY_Marks"].push(3);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
     });
 
@@ -131,6 +177,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "white" });
             $(".turn-o").css({ "background-color": "#C1C1C1" });
             player_Marks_obj["playerX_Marks"].push(4);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
         else if (turn == 'o') {
             cssRound(four);
@@ -138,6 +190,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "#C1C1C1" });
             $(".turn-o").css({ "background-color": "white" });
             player_Marks_obj["playerY_Marks"].push(4);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
     });
 
@@ -150,6 +208,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "white" });
             $(".turn-o").css({ "background-color": "#C1C1C1" });
             player_Marks_obj["playerX_Marks"].push(5);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
         else if (turn == 'o') {
             cssRound(five);
@@ -157,6 +221,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "#C1C1C1" });
             $(".turn-o").css({ "background-color": "white" });
             player_Marks_obj["playerY_Marks"].push(5);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
     });
 
@@ -169,6 +239,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "white" });
             $(".turn-o").css({ "background-color": "#C1C1C1" });
             player_Marks_obj["playerX_Marks"].push(6);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
         else if (turn == 'o') {
             cssRound(six);
@@ -176,6 +252,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "#C1C1C1" });
             $(".turn-o").css({ "background-color": "white" });
             player_Marks_obj["playerY_Marks"].push(6);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
     });
 
@@ -188,6 +270,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "white" });
             $(".turn-o").css({ "background-color": "#C1C1C1" });
             player_Marks_obj["playerX_Marks"].push(7);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
         else if (turn == 'o') {
             cssRound(seven);
@@ -195,6 +283,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "#C1C1C1" });
             $(".turn-o").css({ "background-color": "white" });
             player_Marks_obj["playerY_Marks"].push(7);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
     });
 
@@ -207,6 +301,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "white" });
             $(".turn-o").css({ "background-color": "#C1C1C1" });
             player_Marks_obj["playerX_Marks"].push(8);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
         else if (turn == 'o') {
             cssRound(eight);
@@ -214,6 +314,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "#C1C1C1" });
             $(".turn-o").css({ "background-color": "white" });
             player_Marks_obj["playerY_Marks"].push(8);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
     });
 
@@ -226,6 +332,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "white" });
             $(".turn-o").css({ "background-color": "#C1C1C1" });
             player_Marks_obj["playerX_Marks"].push(9);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
         else if (turn == 'o') {
             cssRound(nine);
@@ -233,6 +345,12 @@ $(document).ready(() => {
             $(".turn-x").css({ "background-color": "#C1C1C1" });
             $(".turn-o").css({ "background-color": "white" });
             player_Marks_obj["playerY_Marks"].push(9);
+                    if (playerX.length > 2) {
+                      WhoWon(playerX, playerXX, winModel_val);
+                    }
+                    if (playerO.length > 2) {
+                      WhoWon(playerO, playerOO, winModel_val);
+                    }
         }
     });
 

@@ -3,6 +3,9 @@
 .game{
     display: none;
 }
+.winingText{
+    display: none;
+}
 
 .wrapper div{
     border: 2px black solid;
@@ -54,6 +57,14 @@
 
     border: 2px solid black;
     border-radius: 20px;
+}
+
+.winingText{
+    display: grid;
+
+    justify-items: center;
+    font-family: 'Finger Paint', cursive;
+    font-size: 15px;
 }
 
 .wrapper-third{
