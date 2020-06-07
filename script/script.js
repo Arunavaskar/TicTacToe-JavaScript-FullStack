@@ -48,6 +48,58 @@ $(document).ready(() => {
     };
 
     var winModel_val = Object.values(winModel_obj);
+    //console.log(winModel_val);
+    //side to side
+    var val123 = JSON.stringify(winModel_val[0][0]);
+    var val456 = JSON.stringify(winModel_val[0][1]);
+    var val789 = JSON.stringify(winModel_val[0][2]);
+    //top to buttom
+    var val147 = JSON.stringify(winModel_val[1][0]);
+    var val258 = JSON.stringify(winModel_val[1][1]);
+    var val369 = JSON.stringify(winModel_val[1][2]);
+    //criss cross
+    var val159 = JSON.stringify(winModel_val[2][0]);
+    var val357 = JSON.stringify(winModel_val[2][1]);
+
+    function stripes(Stringincluded) {
+      switch (Stringincluded) {
+        //side to side
+        case val123:
+          $(".wrapper").css({ "background-image": 'url("media/123.png")' });
+          break;
+
+        case val456:
+          $(".wrapper").css({ "background-image": 'url("media/456.png")' });
+          break;
+
+        case val789:
+          $(".wrapper").css({ "background-image": 'url("media/789.png")' });
+          break;
+
+        //top to buttom
+        case val147:
+          $(".wrapper").css({ "background-image": 'url("media/147.png")' });
+          break;
+
+        case val258:
+          $(".wrapper").css({ "background-image": 'url("media/258.png")' });
+          break;
+
+        case val369:
+          $(".wrapper").css({ "background-image": 'url("media/369.png")' });
+          break;
+
+        //criss cross
+        case val159:
+          $(".wrapper").css({ "background-image": 'url("media/159.png")' });
+          break;
+
+        case val357:
+          $(".wrapper").css({ "background-image": 'url("media/357.png")' });
+          break;
+      }
+    }
+
     function WhoWon(player, playerName, winModel_val) {
         for (let index = 0; index < winModel_val.length; index++) {
             let element = winModel_val[index];
@@ -55,17 +107,13 @@ $(document).ready(() => {
                 var element2 = element[index2];
                 var included = element2.filter((value) => player.includes(value));
                 if (JSON.stringify(included) == JSON.stringify(element2)){
-                    var write = playerName + " won";
-                    console.log(write + JSON.stringify(included));
+                    var write = playerName + " won ";
+                    //console.log(write + JSON.stringify(included));
                     $(".winingText").css({"display":"block"});
                     $(".winingText").html(playerName + " won! click on the restart button below to restart the game.");
-                    // $(".wrapper div").val("");
-                    // $(".wrapper div").css({ "background-image": "", "background-size": "196px 194px" });
-                    // $(".turn-x").css({ "background-color": "#C1C1C1" });
-                    // $(".turn-o").css({ "background-color": "white" });
-                    // $(".game").css({ display: "none" });
-                     $(".box").off("click");
-                    
+                    $(".box").off("click");
+                    var Stringincluded = JSON.stringify(included);
+                    stripes(Stringincluded);
                 }
             }
         }

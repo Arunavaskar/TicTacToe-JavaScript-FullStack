@@ -9,7 +9,7 @@
 
 .wrapper div{
     border: 2px black solid;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .wrapper{
@@ -22,8 +22,8 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
     grid-auto-rows: minmax(50px, auto);
-    /* border: 2px black solid;
-    border-radius: 20px; */
+    /* border: 2px black solid; */
+    /* border-radius: 20px; */
     /* background-image: url(media/board.png);
     background-size: 600px 600px; */
 
@@ -96,3 +96,6 @@
     padding: 2%;
 }
 
+.winingText{
+    font-size: 35px;
+}
